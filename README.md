@@ -21,7 +21,7 @@
     ```
 * Install and enable fprintd:
     ```
-    pacman -S fprintd fprintd-pam
+    pacman -S fprintd
     ```
     ```
     systemctl start fprintd && systemctl enable fprintd
@@ -39,11 +39,3 @@
     ```
     for finger in {left,right}-{thumb,{index,middle,ring,little}-finger}; do fprintd-enroll -f "$finger" "$USER"; done
     ```
-### 1.3 - Troubleshooting
-* Maybe you'll need to enable fingerprint authentication with authselect (I needed this on e.g. Fedora Linux):
-  ```
-  authselect enable-feature with-fingerprint
-  ```
-  ```
-  authselect apply-changes
-  ```
