@@ -1,20 +1,6 @@
 # ThinkPad L14 Gen5 Enable fprint on Arch Linux
 ## 1 - How to enable fingerprint:
 ### 1.1 - Install packages (Not as root!):
-* Install git:
-    ```
-    pacman -S git
-    ```
-* Install yay:
-    ```
-    git clone https://aur.archlinux.org/yay-bin.git
-    ```
-    ```
-    cd ./yay-bin
-    ```
-    ```
-    makepkg -si
-    ```
 * Install libfprint-fpcmoh-git (AUR):
     ```
     yay -S libfprint-fpcmoh-git
